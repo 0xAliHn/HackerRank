@@ -1,0 +1,6 @@
+_, A = input(), set(input().split())
+for _ in range(int(input())):
+    command, *args = input().split()
+    getattr(A, command)(set(input().split()))
+    
+print(sum(map(int, A)))
